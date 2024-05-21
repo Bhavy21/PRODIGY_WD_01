@@ -1,3 +1,7 @@
+# PRODIGY_INFOTECH
+I developed a normal landing page using ReactJs on SuperCars News Related
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
