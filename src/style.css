@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 110vh;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(92, 197, 78, 0.537);
+}
+
+header:hover{
+    background-color: rgba(68, 67, 78, 0.422);
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #359381;
+    pointer-events: none;
+    font-weight: 600;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #359381;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 0 8px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+.nav-items a:hover,
+.nav-items a.active {
+    color: #fff;
+    background-color: #359381;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #359381;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+/* Home Section */
+.home {
+    margin-top: 5px;
+    background: url(../src/assets/imgs/supercar8.jpg) no-repeat center center scroll;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 110vh;
+    min-width: 100%;
+    position: relative;
+}
+
+.home-bg .home .content {
+    width: 50rem;
+    padding: 2rem;
+}
+
+.home-bg .home .content span {
+    color: #ffdd00;
+    font-size: 2.5rem;
+}
+
+.home-bg .home .content h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    color: #05d33f;
+}
+
+.home-bg .home .content p {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    line-height: 1.5;
+    color: #d87d0d;
+}
+
+.home-bg .home .content a {
+    display: inline-block;
+    width: auto;
+    color: #359381;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.home-bg .home .content a:hover {
+    color: #008cff95;
+}
+
+/* Container */
+.container {
+    background: #736e6e60;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap; 
+    padding: 20px 0;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 5px;
+    padding: 5px;
+    width: 48vw;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+
+.details h1,
+.details .imgs,
+.details p {
+    margin: 15px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.details h1 {
+    font-size: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.details .imgs {
+    width: calc(100% - 38px);
+    min-height: 41vh;
+    max-height: 81vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgs img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.imgs img:hover {
+    transform: scale(1.1); 
+}
+
+
+.details p {
+    font-size: 22px;
+    background-color: rgba(255, 255, 255, 0.862);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-section {
+    margin: 10px;
+    flex: 1;
+}
+
+.footer-section h2 {
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    color: #bbb;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #bbb;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #bbb;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px){
+
+    .details {
+        width: 95vw; 
+        height: auto; 
+    }
+
+    .details .imgs {
+        width: calc(100% - 38px);
+        max-height: 60vh;
+    }
+}
+
+@media (max-width: 1000px) {
+    .logo {
+        font-size: 1.5em;
+        color: #359381;
+        pointer-events: none;
+    }
+    .nav-container {
+        display: flex;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        background-color: rgba(255, 255, 255, 0.862);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: none;
+        height: 230px;
+    }
+    
+    .nav-items a {
+        margin: 10px 0;
+        font-size: 20px;
+    }
+    .nav-items a:hover,
+    .nav-items a.active {
+        background: #359381;
+        color: #fff;
+    }
+    
+    .nav-container.active .nav-items {
+        padding: 10px;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        transition: all 1s ease;
+        font-weight: 600;
+        background-color: rgba(255, 255, 255, 0.474);
+        color: white;
+    }
+}
+
+@media (min-width: 2822px),(min-height: 1075px){
+    .home {
+        margin-top: 5px;
+        background: url(../src/assets/imgs/supercars2.jpg) no-repeat center center scroll;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        min-height: 130vh;
+        min-width: 100%;
+        position: relative;
+    }
+}
