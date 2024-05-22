@@ -2,7 +2,7 @@
 I developed a normal landing page using ReactJs on SuperCars News Related
 
 
-You can use Vite
+You can use Vite <br\>
 For start
 
 cd ProjectName
